@@ -5,6 +5,16 @@ Kernel*](https://www.kernel.org/doc/Documentation/SubmittingPatches),
 the [git man pages](http://git-scm.com/doc) and various practices popular
 among the community.
 
+Translations of the guide are available in the following languages:
+
+* [Chinese (Simplified)](https://github.com/aseaday/git-style-guide)
+* [Chinese (Traditional)](https://github.com/JuanitoFatas/git-style-guide)
+* [French](https://github.com/pierreroth64/git-style-guide)
+* [Japanese](https://github.com/objectx/git-style-guide)
+* [Korean](https://github.com/ikaruce/git-style-guide)
+* [Portuguese](https://github.com/guylhermetabosa/git-style-guide)
+* [Ukrainian](https://github.com/denysdovhan/git-style-guide)
+
 If you feel like contributing, please do so! Fork the project and open a pull
 request.
 
@@ -40,19 +50,16 @@ request.
 
 * When several people are working on the *same* feature, it might be convenient
   to have *personal* feature branches and a *team-wide* feature branch.
-  In that case, suffix the name of branch with a slash, followed by the
-  person's name for the personal branches and *"master"* for the team-wide
-  branch:
+  Use the following naming convention:
 
   ```shell
   $ git checkout -b feature-a/master # team-wide branch
-  $ git checkout -b feature-a/maria # Maria's branch
-  $ git checkout -b feature-a/nick # Nick's branch
+  $ git checkout -b feature-a/maria  # Maria's personal branch
+  $ git checkout -b feature-a/nick   # Nick's personal branch
   ```
 
-  [Merge](#merging) at will the personal branches to the team-wide branch
-  *after* rebasing onto it (in order to maintain a simple history). Eventually,
-  the team-wide branch will be merged to `master`.
+  Merge at will the personal branches to the team-wide branch (see ["Merging"](#merging)).
+  Eventually, the team-wide branch will be merged to "master".
 
 * Delete your branch from the upstream repository after it's merged (unless
   there is a specific reason not to).
@@ -224,11 +231,10 @@ request.
 
 * *Test before you push.* Do not push half-done work.
 
-* Use [annotated tags](http://git-scm.com/book/en/v2/Git-Basics-Tagging#Annotated-Tags) for
-  marking releases or other important points in the history.
-
-  Prefer [lightweight tags](http://git-scm.com/book/en/v2/Git-Basics-Tagging#Lightweight-Tags) for personal use, such as to bookmark commits
-  for future reference.
+* Use [annotated tags](http://git-scm.com/book/en/v2/Git-Basics-Tagging#Annotated-Tags)
+  for marking releases or other important points in the history. Prefer
+  [lightweight tags](http://git-scm.com/book/en/v2/Git-Basics-Tagging#Lightweight-Tags)
+  for personal use, such as to bookmark commits for future reference.
 
 * Keep your repositories at a good shape by performing maintenance tasks
   occasionally, in your local *and* remote repositories:
@@ -239,9 +245,9 @@ request.
 
 # License
 
-![cc license](http://i.creativecommons.org/l/by-nc/3.0/88x31.png)
+![cc license](http://i.creativecommons.org/l/by/4.0/88x31.png)
 
-This work is licensed under a Creative Commons Attribution-NonCommercial 4.0
+This work is licensed under a Creative Commons Attribution 4.0
 International license.
 
 # Credits
